@@ -1,0 +1,16 @@
+language: php
+
+php: 7.1
+
+branches:
+    only:
+        - master
+
+before_script:
+    - npm install
+
+script:
+    - gulp
+
+notifications:
+    email: false
